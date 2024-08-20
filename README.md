@@ -26,16 +26,26 @@ In retrospect, binning is probably still the correct move, but the bin labels sh
 * Assumption/goal: The weight of this scaled column changes from {'10m - 50m' = Yes} to {10,000,000} (or .2 if 1 = the above $50m max), while the entitiy's "Income Amount" would ideally scale to the same .2 if their income is also within the 10m-50m category. 
 
 Labels:
-INCOME_AMT
-0                24388
-1-9999             728
-10000-24999        543
-25000-99999       3747
-100000-499999     3374
-1M-5M              955
-5M-10M             185
-10M-50M            240
-50M+               139
+| INCOME_AMT | n_Unique |
+|----------|----------|
+0  |            24388 |
+|----------|----------|
+1-9999  |         728 |
+|----------|----------|
+10000-24999  |    543 |
+|----------|----------|
+25000-99999  |   3747 |
+|----------|----------|
+100000-499999  | 3374 |
+|----------|----------|
+1M-5M  |          955 |
+|----------|----------|
+5M-10M  |         185 |
+|----------|----------|
+10M-50M  |        240 |
+|----------|----------|
+50M+  |           139 |
+|----------|----------|
 
 After the data consolidation, cleansing and scaling, I attempted to use Keras_Tuner to find the best parameters for the neural network model. While adding a couple activation functions to the Choice function was a step in the correct direction, embedding the choice within the if statement to pull activation function per layer would have, at least, helped add some clarity, if not achieve the goal. 
 
