@@ -8,13 +8,13 @@ The nonprofit foundation Alphabet Soup wants a tool that can help it select the 
 
 From Alphabet Soup’s business team, you have received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization..
 
-## Overview of the Starter Code
+## Overview of [the Starter Code](https://nbviewer.jupyter.org/github/famndox/M21-deep-learning/blob/main/Starter_Code/Starter_Code.ipynb<br>
 
 * Consolidate, scale, and dummify the metadata from the dataset
 * Compile, train, and evaluate the model
 * Followed by a foolhardy (because it's binary) attempt to visualize the query for my squishy human brain
 
-## Overview of Modified
+## Overview of [the Modified code](https://nbviewer.jupyter.org/github/famndox/M21-deep-learning/blob/main/Starter_Code/Modified.ipynb)<br>
 
 The goal was to adjust the input data and variables within the model to achieve a target predictive accuracy higher than 75%. 
 
@@ -56,4 +56,4 @@ To improve the model, as mentioned, I'm considering:
 * I did not tweak number of epochs from 100 on the full model fitment - but I'm almost certain that some of my models' overall accuracy would improve with more tail-end, learned and improved epochs over 75%
 * Ultimately, conscious of power and performance, I know fewer neurons is the more correct approach
 
-  ...it's conflicting. <3
+  ...it's conflicting. Still <3 the nice folks & bots at <a href='https://www.blackbox.ai/'>Blackbox AI</a>!
